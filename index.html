@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bouba Drame | Développeur Web</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Boubacar Drame</h1>
+<nav>
+<a href="#">Accueil</a>
+<a href="#services">Services</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-text">
+<h2>Je crée des <span>sites web modernes</span> qui attirent des clients</h2>
+<p>Développeur web basé à Dakar – j’aide les entreprises à gagner plus de clients en ligne</p>
+
+<button onclick="scrollToContact()">Me contacter</button>
+
+<p class="price">💰 À partir de 50 000 FCFA</p>
+</div>
+
+</section>
+
+<!-- POURQUOI MOI -->
+<section class="why">
+<h2>Pourquoi me choisir ?</h2>
+
+<div class="cards">
+<div class="card">⚡ Livraison rapide</div>
+<div class="card">📱 Compatible mobile</div>
+<div class="card">💼 Design professionnel</div>
+<div class="card">📈 Attire plus de clients</div>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services">
+<h2>Mes Services</h2>
+
+<div class="cards">
+<div class="card">🌐 Création de site web</div>
+<div class="card">🛒 E-commerce</div>
+<div class="card">🚀 Optimisation SEO</div>
+</div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="portfolio">
+<h2>Mes Projets</h2>
+
+<div class="project">Site Pharmacie moderne</div>
+<div class="project">Site Restaurant</div>
+<div class="project">Boutique en ligne</div>
+</section>
+
+<!-- TEMOIGNAGES -->
+<section class="testimonials">
+<h2>Avis clients</h2>
+
+<div class="cards">
+<div class="card">⭐⭐⭐⭐⭐ "Très professionnel !" </div>
+<div class="card">⭐⭐⭐⭐⭐ "Mon business a évolué !" </div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+<h2>Contact</h2>
+<p>WhatsApp : +221 784235626</p>
+<p>Email : rabv2892@gmail.com</p>
+</section>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/221XXXXXXXX" class="whatsapp" target="_blank">💬</a>
+
+<footer>
+<p>© 2026 Boubacar Drame</p>
+</footer>
+
+<script>
+function scrollToContact() {
+document.getElementById("contact").scrollIntoView({behavior:"smooth"});
+}
+
+// animation scroll
+const elements = document.querySelectorAll(".card, .project");
+
+window.addEventListener("scroll", () => {
+elements.forEach(el => {
+const position = el.getBoundingClientRect().top;
+if(position < window.innerHeight - 50){
+el.classList.add("show");
+}
+});
+});
+</script>
+
+</body>
+</html>

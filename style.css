@@ -1,0 +1,120 @@
+body {
+margin:0;
+font-family: 'Segoe UI', sans-serif;
+background:#0f172a;
+color:white;
+scroll-behavior:smooth;
+}
+
+/* HEADER */
+header {
+display:flex;
+justify-content:space-between;
+padding:20px 50px;
+background:#020617;
+position:sticky;
+top:0;
+}
+
+header h1 {
+color:#38bdf8;
+}
+
+nav a {
+color:white;
+margin:0 15px;
+text-decoration:none;
+}
+
+/* HERO */
+.hero {
+display:flex;
+align-items:center;
+justify-content:space-around;
+padding:80px 20px;
+flex-wrap:wrap;
+}
+
+.hero h2 {
+font-size:35px;
+}
+
+.hero span {
+color:#38bdf8;
+}
+
+.hero button {
+padding:15px;
+background:#38bdf8;
+border:none;
+cursor:pointer;
+margin-top:20px;
+}
+
+.price {
+margin-top:10px;
+color:#22c55e;
+}
+/* CARDS */
+.cards {
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.card {
+background:#1e293b;
+padding:20px;
+border-radius:15px;
+opacity:0;
+transform:translateY(30px);
+transition:0.5s;
+}
+
+.card.show {
+opacity:1;
+transform:translateY(0);
+}
+
+/* SECTIONS */
+section {
+padding:50px;
+text-align:center;
+}
+
+.project {
+background:#1e293b;
+padding:20px;
+margin:10px auto;
+border-radius:10px;
+max-width:400px;
+opacity:0;
+transform:translateY(30px);
+transition:0.5s;
+}
+
+.project.show {
+opacity:1;
+transform:translateY(0);
+}
+
+/* WHATSAPP */
+.whatsapp {
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:25px;
+text-decoration:none;
+}
+
+/* FOOTER */
+footer {
+background:#020617;
+padding:20px;
+text-align:center;
+}
