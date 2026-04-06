@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bouba Drame | Développeur Web</title>
+<title>Boubacar Drame | Développeur Web</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,7 +11,8 @@
 
 <header>
 <h1>Boubacar Drame</h1>
-<nav>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+<nav id="nav">
 <a href="#">Accueil</a>
 <a href="#services">Services</a>
 <a href="#portfolio">Portfolio</a>
@@ -82,14 +83,19 @@
 </section>
 
 <!-- WHATSAPP FLOAT -->
-<a href="https://wa.me/221784235626" class="whatsapp" target="_blank">💬</a>
+<a href="https://wa.me/+221 784235626" class="whatsapp" target="_blank">💬</a>
 
 <a href="demos.html" class="cta">Voir mes démonstrations</a>
 <footer>
 <p>© 2026 Boubacar Drame</p>
 </footer>
 
+
 <script>
+    function toggleMenu() {
+document.getElementById("nav").classList.toggle("active");
+}
+
 function scrollToContact() {
 document.getElementById("contact").scrollIntoView({behavior:"smooth"});
 }
