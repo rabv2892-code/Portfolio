@@ -38,6 +38,17 @@ display:none;
 font-size:28px;
 cursor:pointer;
 }
+nav {
+display:flex;
+gap:20px;
+}
+
+/* IMPORTANT */
+@media (max-width:768px){
+nav {
+display:none;
+}
+}
 @media (max-width:768px){
 
 .menu-toggle {
